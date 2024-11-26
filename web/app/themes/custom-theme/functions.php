@@ -1,10 +1,7 @@
 <?php
-// Enqueue Styles and Scripts
-function my_custom_theme_enqueue_styles() {
-    wp_enqueue_style( 'style', get_stylesheet_uri() );
-}
 
-add_action( 'wp_enqueue_scripts', 'my_custom_theme_enqueue_styles' );
+include_once get_template_directory() . '/inc/cleanup.php';
+
 // Add theme support for custom logo
 // function my_custom_theme_setup() {
 //     add_theme_support( 'custom-logo' );
